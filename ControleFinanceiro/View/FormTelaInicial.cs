@@ -1,4 +1,5 @@
 ﻿using ControleFinanceiro.Properties;
+using ControleFinanceiro.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,7 +24,17 @@ namespace ControleFinanceiro
         {
             InitializeComponent();
         }
-
+        private void CarregarPainelFilho(object FormFilho)
+        {
+            if (this.pnlPrincipal.Controls.Count > 0)
+                this.pnlPrincipal.Controls.RemoveAt(0);
+            Form f = FormFilho as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.pnlPrincipal.Controls.Add(f);
+            this.pnlPrincipal.Tag = f;
+            f.Show();
+        }
         private void BotaoSelecionado(Panel lateralDoBotao, Button button,  string nomeDaImagemAzul)
         {
             if (button.ForeColor != Color.FromArgb(68, 138, 255))
@@ -89,6 +100,7 @@ namespace ControleFinanceiro
         private void btnTransacao_Click(object sender, EventArgs e)
         {
             BotaoSelecionado(pnlBorderBtnTransacao, btnTransacao, "btnTransacaoAzul.png");
+            CarregarPainelFilho(new FormTransacao());
         }
         private void btnConta_Click(object sender, EventArgs e)
         {
@@ -110,6 +122,7 @@ namespace ControleFinanceiro
         {
             Application.Exit();
         }
+
         private void btnMinimizarJanela_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
