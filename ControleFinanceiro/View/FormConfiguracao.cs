@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace ControleFinanceiro.View
 {
-    public partial class FormTransacao : Form
+    public partial class FormConfiguracao : Form
     {
-        public FormTransacao()
+        public FormConfiguracao()
         {
             InitializeComponent();
-        }
-
-        private void FormTransacao_Load(object sender, EventArgs e)
-        {
-            
-
         }
     }
 }
