@@ -232,4 +232,34 @@
         mSoXv9cP92GtfGwfbGAbVxsP6T2+9uRth8PhcDgc5pLJ/AXoDrAapozCTQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="btnPago.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAEkSURBVGhD7ZZRCsIwEER7oIIH8U9/rHqB3kU9r4hYZ+sEF2loo9ikMA8W2mTbfZuG0EoIIYQQ
+        Ik7XdSteLg/It4gH4syh5eDkAydOlQ9kj4h7r/3G7mumlAskP1feuCG2TCkXSEo+C5CMyW+YUi6QlHwW
+        ICn5LEBS8smgwM9/hHhH7Pdgz5T/gAIXhK1ay6Fk7Fm+wzPLyp/6Ui++asKe4bOeWeRrxNAnPzBlFOTG
+        tk3DlP+CQluErZZn0pewHOZ65j9tUDC5CZtjjmd++QAKT27CxjjnyScfgMBoE3bNMU9++YCJUMjTN8Eo
+        Vz4AoT1i6GTJd9qkArGhJjzlygcgOLSdjPK2TQwTpXBgOfIBE6b4FbHm8LKAeIPY8VYIIYQQ06iqJ52w
+        lKJBMnuTAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnEditar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAEDSURBVEhL7ZM9CsJAEEbT6RUsPYCFWNh6AAsbj2EhIhY2KSwCHkXEo4iH0MbGxjq+2Z1AovlR
+        sisE8uArZlbfxyYkaGk0cRyvyJWcyVjXfqFoR9I8yUSP/UFJZOqyPMhIf+IPSvLKL3rsDqQbiY4G5vfy
+        ux65AaGUJpSVL3RdH2ShdWYI9dggM9nqWB8VFpEpd4aIrb8Ut+UI0++0jEj/Uh9k39xUcHdbkVlnJW3p
+        74jMOitpeKmAcEhORl2Mu08mDeKp9efi9qZpkPdsxwf+ShMo6ZMZSR67+8eLtEuWOmZgP/BSKiCeE2Gv
+        q/9A4dH2Gta69g9lN3Ig8k47um5pMkHwAhqxxF51Fu6eAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnExcluir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACbSURBVEhL7dAxCoNAGAXhPV/ImQPJUYI5hcX6J04lFoPPQsh+sJW+cbENl9V7f9XZevI4U6G9
+        +FH+UvXyWR+e6zzIDvvWP5Uj57GLkfPYxch57GLkPHYxch67GDmPXYycxy5GzmMXI+exi5Hz2MXIeexi
+        5Dx2MXIeuxg5j12MnMcuRs6rzbROI29yXo3udT6/+THfi9/IDX+ntQWVhb83j2/3mAAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
 </root>

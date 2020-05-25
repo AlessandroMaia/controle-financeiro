@@ -57,6 +57,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblAnoTransacao = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnPago = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -70,6 +74,7 @@
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMesAnterior)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnProximoMes)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -288,11 +293,10 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.dgvTransacao);
+            this.panel3.Controls.Add(this.tableLayoutPanel3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 139);
             this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(20, 5, 10, 20);
             this.panel3.Size = new System.Drawing.Size(661, 546);
             this.panel3.TabIndex = 4;
             // 
@@ -314,10 +318,11 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvTransacao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTransacao.ColumnHeadersHeight = 35;
+            this.tableLayoutPanel3.SetColumnSpan(this.dgvTransacao, 5);
             this.dgvTransacao.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvTransacao.EnableHeadersVisualStyles = false;
             this.dgvTransacao.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.dgvTransacao.Location = new System.Drawing.Point(20, 5);
+            this.dgvTransacao.Location = new System.Drawing.Point(23, 8);
             this.dgvTransacao.MultiSelect = false;
             this.dgvTransacao.Name = "dgvTransacao";
             this.dgvTransacao.ReadOnly = true;
@@ -329,7 +334,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             this.dgvTransacao.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTransacao.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTransacao.Size = new System.Drawing.Size(631, 521);
+            this.dgvTransacao.Size = new System.Drawing.Size(609, 459);
             this.dgvTransacao.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -358,6 +363,7 @@
             // btnMesAnterior
             // 
             this.btnMesAnterior.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnMesAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMesAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnMesAnterior.Image")));
             this.btnMesAnterior.Location = new System.Drawing.Point(160, 11);
             this.btnMesAnterior.Name = "btnMesAnterior";
@@ -369,6 +375,7 @@
             // btnProximoMes
             // 
             this.btnProximoMes.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnProximoMes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProximoMes.Image = ((System.Drawing.Image)(resources.GetObject("btnProximoMes.Image")));
             this.btnProximoMes.Location = new System.Drawing.Point(420, 11);
             this.btnProximoMes.Name = "btnProximoMes";
@@ -425,6 +432,72 @@
             this.label13.TabIndex = 4;
             this.label13.Text = "TRANSAÇÕES";
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 7;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Controls.Add(this.dgvTransacao, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.btnPago, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.btnEditar, 3, 3);
+            this.tableLayoutPanel3.Controls.Add(this.btnExcluir, 5, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 4;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(655, 540);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // btnPago
+            // 
+            this.btnPago.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnPago.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnPago.FlatAppearance.BorderSize = 0;
+            this.btnPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPago.Image = ((System.Drawing.Image)(resources.GetObject("btnPago.Image")));
+            this.btnPago.Location = new System.Drawing.Point(242, 490);
+            this.btnPago.Name = "btnPago";
+            this.btnPago.Size = new System.Drawing.Size(45, 40);
+            this.btnPago.TabIndex = 1;
+            this.btnPago.UseVisualStyleBackColor = false;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.Location = new System.Drawing.Point(305, 490);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(45, 40);
+            this.btnEditar.TabIndex = 1;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnExcluir.FlatAppearance.BorderSize = 0;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
+            this.btnExcluir.Location = new System.Drawing.Point(368, 490);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(45, 40);
+            this.btnExcluir.TabIndex = 1;
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            // 
             // FormTransacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,6 +528,7 @@
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMesAnterior)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnProximoMes)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -487,5 +561,9 @@
         private System.Windows.Forms.Label lblAnoTransacao;
         private System.Windows.Forms.PictureBox btnProximoMes;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Button btnPago;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }
