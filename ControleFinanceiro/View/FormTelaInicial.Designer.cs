@@ -254,7 +254,7 @@
             this.pnlBarraSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBarraSuperior.Location = new System.Drawing.Point(200, 0);
             this.pnlBarraSuperior.Name = "pnlBarraSuperior";
-            this.pnlBarraSuperior.Size = new System.Drawing.Size(884, 37);
+            this.pnlBarraSuperior.Size = new System.Drawing.Size(1078, 37);
             this.pnlBarraSuperior.TabIndex = 1;
             // 
             // btnRecolherMenu
@@ -275,7 +275,7 @@
             // 
             this.btnMinimizarJanela.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnMinimizarJanela.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizarJanela.Image")));
-            this.btnMinimizarJanela.Location = new System.Drawing.Point(814, 0);
+            this.btnMinimizarJanela.Location = new System.Drawing.Point(1008, 0);
             this.btnMinimizarJanela.Name = "btnMinimizarJanela";
             this.btnMinimizarJanela.Size = new System.Drawing.Size(35, 37);
             this.btnMinimizarJanela.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -289,7 +289,7 @@
             // 
             this.btnFecharJanela.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnFecharJanela.Image = ((System.Drawing.Image)(resources.GetObject("btnFecharJanela.Image")));
-            this.btnFecharJanela.Location = new System.Drawing.Point(849, 0);
+            this.btnFecharJanela.Location = new System.Drawing.Point(1043, 0);
             this.btnFecharJanela.Name = "btnFecharJanela";
             this.btnFecharJanela.Size = new System.Drawing.Size(35, 37);
             this.btnFecharJanela.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -305,14 +305,14 @@
             this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrincipal.Location = new System.Drawing.Point(200, 37);
             this.pnlPrincipal.Name = "pnlPrincipal";
-            this.pnlPrincipal.Size = new System.Drawing.Size(884, 724);
+            this.pnlPrincipal.Size = new System.Drawing.Size(1078, 724);
             this.pnlPrincipal.TabIndex = 2;
             // 
             // FormTelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 761);
+            this.ClientSize = new System.Drawing.Size(1278, 761);
             this.Controls.Add(this.pnlPrincipal);
             this.Controls.Add(this.pnlBarraSuperior);
             this.Controls.Add(this.pnlMenu);

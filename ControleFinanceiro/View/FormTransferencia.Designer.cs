@@ -34,8 +34,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnFecharForm = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtValorDespesa = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.cmbNovaContaTransferencia = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txtDescricaoDespesa = new System.Windows.Forms.TextBox();
@@ -47,17 +47,17 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.cmbContaDespesa = new System.Windows.Forms.ComboBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.cmbContaDespesa = new System.Windows.Forms.ComboBox();
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel8
@@ -108,6 +108,7 @@
             this.btnFecharForm.TabIndex = 4;
             this.btnFecharForm.Text = "X";
             this.btnFecharForm.UseVisualStyleBackColor = false;
+            this.btnFecharForm.Click += new System.EventHandler(this.btnFecharForm_Click_1);
             // 
             // tableLayoutPanel4
             // 
@@ -125,18 +126,6 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(334, 29);
             this.tableLayoutPanel4.TabIndex = 10;
             // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(194)))), ((int)(((byte)(194)))));
-            this.label3.Location = new System.Drawing.Point(4, 2);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 25);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "R$";
-            // 
             // txtValorDespesa
             // 
             this.txtValorDespesa.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -148,6 +137,18 @@
             this.txtValorDespesa.Name = "txtValorDespesa";
             this.txtValorDespesa.Size = new System.Drawing.Size(276, 23);
             this.txtValorDespesa.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(194)))), ((int)(((byte)(194)))));
+            this.label3.Location = new System.Drawing.Point(4, 2);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 25);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "R$";
             // 
             // cmbNovaContaTransferencia
             // 
@@ -312,16 +313,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(438, 260);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
-            // cmbContaDespesa
+            // pictureBox3
             // 
-            this.cmbContaDespesa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.cmbContaDespesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbContaDespesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbContaDespesa.FormattingEnabled = true;
-            this.cmbContaDespesa.Location = new System.Drawing.Point(81, 151);
-            this.cmbContaDespesa.Name = "cmbContaDespesa";
-            this.cmbContaDespesa.Size = new System.Drawing.Size(332, 33);
-            this.cmbContaDespesa.TabIndex = 7;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(23, 151);
+            this.pictureBox3.Name = "pictureBox3";
+            this.tableLayoutPanel1.SetRowSpan(this.pictureBox3, 2);
+            this.pictureBox3.Size = new System.Drawing.Size(52, 29);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -334,16 +335,16 @@
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox3
+            // cmbContaDespesa
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(23, 151);
-            this.pictureBox3.Name = "pictureBox3";
-            this.tableLayoutPanel1.SetRowSpan(this.pictureBox3, 2);
-            this.pictureBox3.Size = new System.Drawing.Size(52, 29);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
+            this.cmbContaDespesa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.cmbContaDespesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbContaDespesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbContaDespesa.FormattingEnabled = true;
+            this.cmbContaDespesa.Location = new System.Drawing.Point(81, 151);
+            this.cmbContaDespesa.Name = "cmbContaDespesa";
+            this.cmbContaDespesa.Size = new System.Drawing.Size(332, 33);
+            this.cmbContaDespesa.TabIndex = 7;
             // 
             // FormTransferencia
             // 
@@ -356,6 +357,7 @@
             this.Controls.Add(this.panel8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTransferencia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTransferencia";
             this.panel8.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -365,8 +367,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }

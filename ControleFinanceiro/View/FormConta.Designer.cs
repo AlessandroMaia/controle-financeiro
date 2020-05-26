@@ -32,13 +32,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.btnNovaConta = new System.Windows.Forms.Button();
-            this.btnEditarConta = new System.Windows.Forms.Button();
             this.btnExcluirConta = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblSaldoAtual = new System.Windows.Forms.Label();
+            this.btnEditarConta = new System.Windows.Forms.Button();
+            this.btnNovaConta = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblSaldoNoFinalDoMes = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -72,6 +72,7 @@
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 7, 2);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 7, 4);
             this.tableLayoutPanel1.Controls.Add(this.dgvContas, 1, 2);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 9;
@@ -84,8 +85,22 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(866, 684);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(868, 685);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // btnExcluirConta
+            // 
+            this.btnExcluirConta.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnExcluirConta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnExcluirConta.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnExcluirConta.FlatAppearance.BorderSize = 0;
+            this.btnExcluirConta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluirConta.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluirConta.Image")));
+            this.btnExcluirConta.Location = new System.Drawing.Point(348, 635);
+            this.btnExcluirConta.Name = "btnExcluirConta";
+            this.btnExcluirConta.Size = new System.Drawing.Size(45, 40);
+            this.btnExcluirConta.TabIndex = 4;
+            this.btnExcluirConta.UseVisualStyleBackColor = false;
             // 
             // label13
             // 
@@ -99,19 +114,29 @@
             this.label13.TabIndex = 5;
             this.label13.Text = "CONTAS";
             // 
-            // btnNovaConta
+            // label1
             // 
-            this.btnNovaConta.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnNovaConta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.btnNovaConta.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnNovaConta.FlatAppearance.BorderSize = 0;
-            this.btnNovaConta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNovaConta.Image = ((System.Drawing.Image)(resources.GetObject("btnNovaConta.Image")));
-            this.btnNovaConta.Location = new System.Drawing.Point(221, 634);
-            this.btnNovaConta.Name = "btnNovaConta";
-            this.btnNovaConta.Size = new System.Drawing.Size(45, 40);
-            this.btnNovaConta.TabIndex = 2;
-            this.btnNovaConta.UseVisualStyleBackColor = false;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(186)))), ((int)(((byte)(186)))));
+            this.label1.Location = new System.Drawing.Point(761, 139);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "SALDO ATUAL";
+            // 
+            // lblSaldoAtual
+            // 
+            this.lblSaldoAtual.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSaldoAtual.AutoSize = true;
+            this.lblSaldoAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaldoAtual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(190)))));
+            this.lblSaldoAtual.Location = new System.Drawing.Point(752, 164);
+            this.lblSaldoAtual.Name = "lblSaldoAtual";
+            this.lblSaldoAtual.Size = new System.Drawing.Size(113, 22);
+            this.lblSaldoAtual.TabIndex = 1;
+            this.lblSaldoAtual.Text = "R$ 2000,00";
             // 
             // btnEditarConta
             // 
@@ -121,37 +146,25 @@
             this.btnEditarConta.FlatAppearance.BorderSize = 0;
             this.btnEditarConta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditarConta.Image = ((System.Drawing.Image)(resources.GetObject("btnEditarConta.Image")));
-            this.btnEditarConta.Location = new System.Drawing.Point(284, 634);
+            this.btnEditarConta.Location = new System.Drawing.Point(285, 635);
             this.btnEditarConta.Name = "btnEditarConta";
             this.btnEditarConta.Size = new System.Drawing.Size(45, 40);
             this.btnEditarConta.TabIndex = 3;
             this.btnEditarConta.UseVisualStyleBackColor = false;
             // 
-            // btnExcluirConta
+            // btnNovaConta
             // 
-            this.btnExcluirConta.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnExcluirConta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.btnExcluirConta.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnExcluirConta.FlatAppearance.BorderSize = 0;
-            this.btnExcluirConta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluirConta.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluirConta.Image")));
-            this.btnExcluirConta.Location = new System.Drawing.Point(347, 634);
-            this.btnExcluirConta.Name = "btnExcluirConta";
-            this.btnExcluirConta.Size = new System.Drawing.Size(45, 40);
-            this.btnExcluirConta.TabIndex = 4;
-            this.btnExcluirConta.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(186)))), ((int)(((byte)(186)))));
-            this.label1.Location = new System.Drawing.Point(759, 139);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "SALDO ATUAL";
+            this.btnNovaConta.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnNovaConta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnNovaConta.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnNovaConta.FlatAppearance.BorderSize = 0;
+            this.btnNovaConta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNovaConta.Image = ((System.Drawing.Image)(resources.GetObject("btnNovaConta.Image")));
+            this.btnNovaConta.Location = new System.Drawing.Point(222, 635);
+            this.btnNovaConta.Name = "btnNovaConta";
+            this.btnNovaConta.Size = new System.Drawing.Size(45, 40);
+            this.btnNovaConta.TabIndex = 2;
+            this.btnNovaConta.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -159,23 +172,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(186)))), ((int)(((byte)(186)))));
-            this.label2.Location = new System.Drawing.Point(683, 199);
+            this.label2.Location = new System.Drawing.Point(685, 199);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(180, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "SALDO NO FINAL DO MÊS";
-            // 
-            // lblSaldoAtual
-            // 
-            this.lblSaldoAtual.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSaldoAtual.AutoSize = true;
-            this.lblSaldoAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaldoAtual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(190)))));
-            this.lblSaldoAtual.Location = new System.Drawing.Point(750, 164);
-            this.lblSaldoAtual.Name = "lblSaldoAtual";
-            this.lblSaldoAtual.Size = new System.Drawing.Size(113, 22);
-            this.lblSaldoAtual.TabIndex = 1;
-            this.lblSaldoAtual.Text = "R$ 2000,00";
             // 
             // lblSaldoNoFinalDoMes
             // 
@@ -183,7 +184,7 @@
             this.lblSaldoNoFinalDoMes.AutoSize = true;
             this.lblSaldoNoFinalDoMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSaldoNoFinalDoMes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(190)))));
-            this.lblSaldoNoFinalDoMes.Location = new System.Drawing.Point(750, 224);
+            this.lblSaldoNoFinalDoMes.Location = new System.Drawing.Point(752, 224);
             this.lblSaldoNoFinalDoMes.Name = "lblSaldoNoFinalDoMes";
             this.lblSaldoNoFinalDoMes.Size = new System.Drawing.Size(113, 22);
             this.lblSaldoNoFinalDoMes.TabIndex = 1;
@@ -193,7 +194,7 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(616, 129);
+            this.pictureBox1.Location = new System.Drawing.Point(618, 129);
             this.pictureBox1.Name = "pictureBox1";
             this.tableLayoutPanel1.SetRowSpan(this.pictureBox1, 2);
             this.pictureBox1.Size = new System.Drawing.Size(57, 54);
@@ -205,7 +206,7 @@
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(616, 189);
+            this.pictureBox2.Location = new System.Drawing.Point(618, 189);
             this.pictureBox2.Name = "pictureBox2";
             this.tableLayoutPanel1.SetRowSpan(this.pictureBox2, 2);
             this.pictureBox2.Size = new System.Drawing.Size(57, 54);
@@ -248,7 +249,7 @@
             this.dgvContas.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.tableLayoutPanel1.SetRowSpan(this.dgvContas, 5);
             this.dgvContas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvContas.Size = new System.Drawing.Size(567, 482);
+            this.dgvContas.Size = new System.Drawing.Size(569, 483);
             this.dgvContas.TabIndex = 7;
             // 
             // FormConta

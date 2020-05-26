@@ -17,7 +17,8 @@ namespace ControleFinanceiro.View
             InitializeComponent();
         }
 
-        private void btnFecharForm_Click(object sender, EventArgs e)
+
+        private void btnFecharForm_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
