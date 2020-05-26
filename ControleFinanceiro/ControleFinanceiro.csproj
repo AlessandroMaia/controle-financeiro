@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="View\FormBotaoNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormBotaoNovo.Designer.cs">
+      <DependentUpon>FormBotaoNovo.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     <Compile Include="View\FormTransacao.Designer.cs">
       <DependentUpon>FormTransacao.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\FormBotaoNovo.resx">
+      <DependentUpon>FormBotaoNovo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormCategoria.resx">
       <DependentUpon>FormCategoria.cs</DependentUpon>
     </EmbeddedResource>
