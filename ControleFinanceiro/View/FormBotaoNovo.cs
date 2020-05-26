@@ -36,7 +36,8 @@ namespace ControleFinanceiro.View
 
         private void btnTransferencia_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            new FormTransferencia().Show();
         }
     }
 }

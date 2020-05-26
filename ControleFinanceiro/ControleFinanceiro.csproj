@@ -96,6 +96,12 @@
     <Compile Include="View\FormTransacao.Designer.cs">
       <DependentUpon>FormTransacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormTransferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormTransferencia.Designer.cs">
+      <DependentUpon>FormTransferencia.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\FormBotaoNovo.resx">
       <DependentUpon>FormBotaoNovo.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormTransacao.resx">
       <DependentUpon>FormTransacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormTransferencia.resx">
+      <DependentUpon>FormTransferencia.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
