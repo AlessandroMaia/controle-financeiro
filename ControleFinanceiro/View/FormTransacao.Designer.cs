@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTransacao));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -47,17 +47,17 @@
             this.lblSaldoAtual = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dgvTransacao = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnMesAnterior = new System.Windows.Forms.PictureBox();
-            this.btnProximoMes = new System.Windows.Forms.PictureBox();
             this.lblMesTransacao = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblAnoTransacao = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.btnProximoMes = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.dgvTransacao = new System.Windows.Forms.DataGridView();
             this.btnPago = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -69,12 +69,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTransacao)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMesAnterior)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnProximoMes)).BeginInit();
+            this.panel3.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTransacao)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -282,6 +282,18 @@
             this.panel2.Size = new System.Drawing.Size(661, 76);
             this.panel2.TabIndex = 1;
             // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.label13.Location = new System.Drawing.Point(37, 9);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(279, 44);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "TRANSAÇÕES";
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.tableLayoutPanel2);
@@ -290,52 +302,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(661, 63);
             this.panel5.TabIndex = 3;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.tableLayoutPanel3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 139);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(661, 546);
-            this.panel3.TabIndex = 4;
-            // 
-            // dgvTransacao
-            // 
-            this.dgvTransacao.AllowUserToAddRows = false;
-            this.dgvTransacao.AllowUserToDeleteRows = false;
-            this.dgvTransacao.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.dgvTransacao.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvTransacao.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            this.dgvTransacao.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTransacao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvTransacao.ColumnHeadersHeight = 35;
-            this.tableLayoutPanel3.SetColumnSpan(this.dgvTransacao, 5);
-            this.dgvTransacao.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvTransacao.EnableHeadersVisualStyles = false;
-            this.dgvTransacao.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.dgvTransacao.Location = new System.Drawing.Point(23, 8);
-            this.dgvTransacao.MultiSelect = false;
-            this.dgvTransacao.Name = "dgvTransacao";
-            this.dgvTransacao.ReadOnly = true;
-            this.dgvTransacao.RowHeadersVisible = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvTransacao.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvTransacao.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTransacao.Size = new System.Drawing.Size(609, 459);
-            this.dgvTransacao.TabIndex = 0;
             // 
             // tableLayoutPanel2
             // 
@@ -346,7 +312,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 224F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Controls.Add(this.btnMesAnterior, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblMesTransacao, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.label6, 3, 0);
@@ -371,18 +337,6 @@
             this.btnMesAnterior.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMesAnterior.TabIndex = 0;
             this.btnMesAnterior.TabStop = false;
-            // 
-            // btnProximoMes
-            // 
-            this.btnProximoMes.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnProximoMes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProximoMes.Image = ((System.Drawing.Image)(resources.GetObject("btnProximoMes.Image")));
-            this.btnProximoMes.Location = new System.Drawing.Point(420, 11);
-            this.btnProximoMes.Name = "btnProximoMes";
-            this.btnProximoMes.Size = new System.Drawing.Size(50, 40);
-            this.btnProximoMes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnProximoMes.TabIndex = 0;
-            this.btnProximoMes.TabStop = false;
             // 
             // lblMesTransacao
             // 
@@ -420,17 +374,26 @@
             this.lblAnoTransacao.TabIndex = 1;
             this.lblAnoTransacao.Text = "2020";
             // 
-            // label13
+            // btnProximoMes
             // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.label13.Location = new System.Drawing.Point(37, 9);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(279, 44);
-            this.label13.TabIndex = 4;
-            this.label13.Text = "TRANSAÇÕES";
+            this.btnProximoMes.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnProximoMes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProximoMes.Image = ((System.Drawing.Image)(resources.GetObject("btnProximoMes.Image")));
+            this.btnProximoMes.Location = new System.Drawing.Point(420, 11);
+            this.btnProximoMes.Name = "btnProximoMes";
+            this.btnProximoMes.Size = new System.Drawing.Size(50, 40);
+            this.btnProximoMes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnProximoMes.TabIndex = 0;
+            this.btnProximoMes.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.tableLayoutPanel3);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 139);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(661, 546);
+            this.panel3.TabIndex = 4;
             // 
             // tableLayoutPanel3
             // 
@@ -455,6 +418,43 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(655, 540);
             this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // dgvTransacao
+            // 
+            this.dgvTransacao.AllowUserToAddRows = false;
+            this.dgvTransacao.AllowUserToDeleteRows = false;
+            this.dgvTransacao.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.dgvTransacao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvTransacao.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
+            this.dgvTransacao.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTransacao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvTransacao.ColumnHeadersHeight = 35;
+            this.tableLayoutPanel3.SetColumnSpan(this.dgvTransacao, 5);
+            this.dgvTransacao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTransacao.EnableHeadersVisualStyles = false;
+            this.dgvTransacao.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.dgvTransacao.Location = new System.Drawing.Point(23, 8);
+            this.dgvTransacao.MultiSelect = false;
+            this.dgvTransacao.Name = "dgvTransacao";
+            this.dgvTransacao.ReadOnly = true;
+            this.dgvTransacao.RowHeadersVisible = false;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvTransacao.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvTransacao.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvTransacao.Size = new System.Drawing.Size(609, 459);
+            this.dgvTransacao.TabIndex = 0;
             // 
             // btnPago
             // 
@@ -511,7 +511,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTransacao";
             this.Text = "FormTransacao";
-            this.Load += new System.EventHandler(this.FormTransacao_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -522,13 +521,13 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel5.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTransacao)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMesAnterior)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnProximoMes)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTransacao)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="View\FormCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormCategoria.Designer.cs">
+      <DependentUpon>FormCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormConfiguracao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="View\FormTransacao.Designer.cs">
       <DependentUpon>FormTransacao.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\FormCategoria.resx">
+      <DependentUpon>FormCategoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormConfiguracao.resx">
       <DependentUpon>FormConfiguracao.cs</DependentUpon>
     </EmbeddedResource>

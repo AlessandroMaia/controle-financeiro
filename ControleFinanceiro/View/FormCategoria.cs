@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ControleFinanceiro.View
 {
-    public partial class FormTransacao : Form
+    public partial class FormCategoria : Form
     {
-        public FormTransacao()
+        public FormCategoria()
         {
             InitializeComponent();
         }

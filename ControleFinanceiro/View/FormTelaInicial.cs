@@ -113,6 +113,7 @@ namespace ControleFinanceiro
         private void btnCategoria_Click(object sender, EventArgs e)
         {
             BotaoSelecionado(pnlBorderBtnCategoria, btnCategoria, "btnCategoriaAzul.png");
+            CarregarPainelFilho(new FormCategoria());
         }
         private void btnConfiguracao_Click(object sender, EventArgs e)
         {
