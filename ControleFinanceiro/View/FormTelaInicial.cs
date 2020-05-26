@@ -105,6 +105,7 @@ namespace ControleFinanceiro
         private void btnConta_Click(object sender, EventArgs e)
         {
             BotaoSelecionado(pnlBorderBtnConta, btnConta, "btnContaAzul.png");
+            CarregarPainelFilho(new FormConta());
         }
         private void btnRelatorio_Click(object sender, EventArgs e)
         {

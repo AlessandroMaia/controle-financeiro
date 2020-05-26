@@ -58,6 +58,12 @@
     <Compile Include="View\FormConfiguracao.Designer.cs">
       <DependentUpon>FormConfiguracao.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormConta.Designer.cs">
+      <DependentUpon>FormConta.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormTelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormConfiguracao.resx">
       <DependentUpon>FormConfiguracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormConta.resx">
+      <DependentUpon>FormConta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormTelaInicial.resx">
       <DependentUpon>FormTelaInicial.cs</DependentUpon>

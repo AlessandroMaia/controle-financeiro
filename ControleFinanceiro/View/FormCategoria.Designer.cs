@@ -32,9 +32,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnNovaCategoria = new System.Windows.Forms.Button();
-            this.btnEditarCategoria = new System.Windows.Forms.Button();
             this.btnExcluirCategoria = new System.Windows.Forms.Button();
+            this.btnEditarCategoria = new System.Windows.Forms.Button();
+            this.btnNovaCategoria = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.dgvTransacao = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
@@ -50,7 +50,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.tableLayoutPanel1.Controls.Add(this.btnExcluirCategoria, 5, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnEditarCategoria, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnNovaCategoria, 1, 3);
@@ -66,19 +66,19 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(850, 669);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // btnNovaCategoria
+            // btnExcluirCategoria
             // 
-            this.btnNovaCategoria.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnNovaCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.btnNovaCategoria.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnNovaCategoria.FlatAppearance.BorderSize = 0;
-            this.btnNovaCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNovaCategoria.Image = ((System.Drawing.Image)(resources.GetObject("btnNovaCategoria.Image")));
-            this.btnNovaCategoria.Location = new System.Drawing.Point(339, 619);
-            this.btnNovaCategoria.Name = "btnNovaCategoria";
-            this.btnNovaCategoria.Size = new System.Drawing.Size(45, 40);
-            this.btnNovaCategoria.TabIndex = 2;
-            this.btnNovaCategoria.UseVisualStyleBackColor = false;
+            this.btnExcluirCategoria.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnExcluirCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnExcluirCategoria.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnExcluirCategoria.FlatAppearance.BorderSize = 0;
+            this.btnExcluirCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluirCategoria.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluirCategoria.Image")));
+            this.btnExcluirCategoria.Location = new System.Drawing.Point(465, 619);
+            this.btnExcluirCategoria.Name = "btnExcluirCategoria";
+            this.btnExcluirCategoria.Size = new System.Drawing.Size(45, 40);
+            this.btnExcluirCategoria.TabIndex = 4;
+            this.btnExcluirCategoria.UseVisualStyleBackColor = false;
             // 
             // btnEditarCategoria
             // 
@@ -94,19 +94,19 @@
             this.btnEditarCategoria.TabIndex = 3;
             this.btnEditarCategoria.UseVisualStyleBackColor = false;
             // 
-            // btnExcluirCategoria
+            // btnNovaCategoria
             // 
-            this.btnExcluirCategoria.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnExcluirCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.btnExcluirCategoria.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnExcluirCategoria.FlatAppearance.BorderSize = 0;
-            this.btnExcluirCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluirCategoria.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluirCategoria.Image")));
-            this.btnExcluirCategoria.Location = new System.Drawing.Point(465, 619);
-            this.btnExcluirCategoria.Name = "btnExcluirCategoria";
-            this.btnExcluirCategoria.Size = new System.Drawing.Size(45, 40);
-            this.btnExcluirCategoria.TabIndex = 4;
-            this.btnExcluirCategoria.UseVisualStyleBackColor = false;
+            this.btnNovaCategoria.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnNovaCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnNovaCategoria.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnNovaCategoria.FlatAppearance.BorderSize = 0;
+            this.btnNovaCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNovaCategoria.Image = ((System.Drawing.Image)(resources.GetObject("btnNovaCategoria.Image")));
+            this.btnNovaCategoria.Location = new System.Drawing.Point(339, 619);
+            this.btnNovaCategoria.Name = "btnNovaCategoria";
+            this.btnNovaCategoria.Size = new System.Drawing.Size(45, 40);
+            this.btnNovaCategoria.TabIndex = 2;
+            this.btnNovaCategoria.UseVisualStyleBackColor = false;
             // 
             // label13
             // 
