@@ -21,5 +21,12 @@ namespace ControleFinanceiro.View
         {
             this.Close();
         }
+
+        private void btnNovaDespesa_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormNovaDespesa formNovaDespesa = new FormNovaDespesa();
+            formNovaDespesa.Show();
+        }
     }
 }

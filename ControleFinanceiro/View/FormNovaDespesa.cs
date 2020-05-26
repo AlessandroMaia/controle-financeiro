@@ -16,5 +16,25 @@ namespace ControleFinanceiro.View
         {
             InitializeComponent();
         }
+
+
+        private void btnMaisDetalhes_Click(object sender, EventArgs e)
+        {
+            if (this.Width == 454)
+            {
+                this.Width = 804;
+                btnMaisDetalhes.Text = "Mais detalhes <";
+            }
+            else
+            {
+                this.Width = 454;
+                btnMaisDetalhes.Text = "Mais detalhes >";
+            }
+        }
+
+        private void btnFecharForm_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

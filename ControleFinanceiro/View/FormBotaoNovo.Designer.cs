@@ -44,13 +44,14 @@
             this.btnNovaDespesa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(186)))), ((int)(((byte)(186)))));
             this.btnNovaDespesa.Image = ((System.Drawing.Image)(resources.GetObject("btnNovaDespesa.Image")));
             this.btnNovaDespesa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNovaDespesa.Location = new System.Drawing.Point(12, 30);
+            this.btnNovaDespesa.Location = new System.Drawing.Point(12, 39);
             this.btnNovaDespesa.Name = "btnNovaDespesa";
             this.btnNovaDespesa.Size = new System.Drawing.Size(316, 80);
             this.btnNovaDespesa.TabIndex = 0;
             this.btnNovaDespesa.Text = "             DESPESA";
             this.btnNovaDespesa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNovaDespesa.UseVisualStyleBackColor = false;
+            this.btnNovaDespesa.Click += new System.EventHandler(this.btnNovaDespesa_Click);
             // 
             // btnNovaReceita
             // 
@@ -61,7 +62,7 @@
             this.btnNovaReceita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(186)))), ((int)(((byte)(186)))));
             this.btnNovaReceita.Image = ((System.Drawing.Image)(resources.GetObject("btnNovaReceita.Image")));
             this.btnNovaReceita.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNovaReceita.Location = new System.Drawing.Point(12, 112);
+            this.btnNovaReceita.Location = new System.Drawing.Point(12, 121);
             this.btnNovaReceita.Name = "btnNovaReceita";
             this.btnNovaReceita.Size = new System.Drawing.Size(316, 80);
             this.btnNovaReceita.TabIndex = 1;
@@ -78,7 +79,7 @@
             this.btnTransferencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(186)))), ((int)(((byte)(186)))));
             this.btnTransferencia.Image = ((System.Drawing.Image)(resources.GetObject("btnTransferencia.Image")));
             this.btnTransferencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTransferencia.Location = new System.Drawing.Point(12, 194);
+            this.btnTransferencia.Location = new System.Drawing.Point(12, 203);
             this.btnTransferencia.Name = "btnTransferencia";
             this.btnTransferencia.Size = new System.Drawing.Size(316, 80);
             this.btnTransferencia.TabIndex = 2;
@@ -106,7 +107,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(340, 284);
+            this.ClientSize = new System.Drawing.Size(340, 300);
             this.Controls.Add(this.btnFecharForm);
             this.Controls.Add(this.btnTransferencia);
             this.Controls.Add(this.btnNovaReceita);
