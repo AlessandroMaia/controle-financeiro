@@ -76,6 +76,12 @@
     <Compile Include="View\FormNovaDespesa.Designer.cs">
       <DependentUpon>FormNovaDespesa.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormNovaReceita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormNovaReceita.Designer.cs">
+      <DependentUpon>FormNovaReceita.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormTelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormNovaDespesa.resx">
       <DependentUpon>FormNovaDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormNovaReceita.resx">
+      <DependentUpon>FormNovaReceita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormTelaInicial.resx">
       <DependentUpon>FormTelaInicial.cs</DependentUpon>

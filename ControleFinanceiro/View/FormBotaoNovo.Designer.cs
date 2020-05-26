@@ -69,6 +69,7 @@
             this.btnNovaReceita.Text = "             RECEITA";
             this.btnNovaReceita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNovaReceita.UseVisualStyleBackColor = false;
+            this.btnNovaReceita.Click += new System.EventHandler(this.btnNovaReceita_Click);
             // 
             // btnTransferencia
             // 
@@ -86,6 +87,7 @@
             this.btnTransferencia.Text = "             TRANSFERÊNCIA";
             this.btnTransferencia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTransferencia.UseVisualStyleBackColor = false;
+            this.btnTransferencia.Click += new System.EventHandler(this.btnTransferencia_Click);
             // 
             // btnFecharForm
             // 

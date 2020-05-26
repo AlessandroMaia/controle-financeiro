@@ -145,8 +145,7 @@ namespace ControleFinanceiro
         }
         private void btnNovo_Click(object sender, EventArgs e)
         {
-            Form a = new FormBotaoNovo();
-            a.Show();
+            new FormBotaoNovo().Show();
         }
     }
 }
