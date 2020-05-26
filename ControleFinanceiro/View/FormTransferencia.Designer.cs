@@ -35,11 +35,11 @@
             this.btnFecharForm = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtValorTransferencia = new System.Windows.Forms.TextBox();
+            this.txtValorDespesa = new System.Windows.Forms.TextBox();
             this.cmbNovaContaTransferencia = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txtDescricaoDespesa = new System.Windows.Forms.TextBox();
-            this.dtpDataTransferencia = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataDespesa = new System.Windows.Forms.DateTimePicker();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -47,7 +47,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.cmbContaTransferencia = new System.Windows.Forms.ComboBox();
+            this.cmbContaDespesa = new System.Windows.Forms.ComboBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel8.SuspendLayout();
@@ -108,14 +108,13 @@
             this.btnFecharForm.TabIndex = 4;
             this.btnFecharForm.Text = "X";
             this.btnFecharForm.UseVisualStyleBackColor = false;
-            this.btnFecharForm.Click += new System.EventHandler(this.btnFecharForm_Click);
             // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.17365F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.82635F));
-            this.tableLayoutPanel4.Controls.Add(this.txtValorTransferencia, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.txtValorDespesa, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(81, 41);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -138,17 +137,17 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "R$";
             // 
-            // txtValorTransferencia
+            // txtValorDespesa
             // 
-            this.txtValorTransferencia.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtValorTransferencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.txtValorTransferencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtValorTransferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorTransferencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(194)))), ((int)(((byte)(194)))));
-            this.txtValorTransferencia.Location = new System.Drawing.Point(46, 3);
-            this.txtValorTransferencia.Name = "txtValorTransferencia";
-            this.txtValorTransferencia.Size = new System.Drawing.Size(276, 23);
-            this.txtValorTransferencia.TabIndex = 4;
+            this.txtValorDespesa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtValorDespesa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.txtValorDespesa.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtValorDespesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorDespesa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(194)))), ((int)(((byte)(194)))));
+            this.txtValorDespesa.Location = new System.Drawing.Point(46, 3);
+            this.txtValorDespesa.Name = "txtValorDespesa";
+            this.txtValorDespesa.Size = new System.Drawing.Size(276, 23);
+            this.txtValorDespesa.TabIndex = 4;
             // 
             // cmbNovaContaTransferencia
             // 
@@ -184,16 +183,16 @@
             this.txtDescricaoDespesa.Size = new System.Drawing.Size(332, 23);
             this.txtDescricaoDespesa.TabIndex = 4;
             // 
-            // dtpDataTransferencia
+            // dtpDataDespesa
             // 
-            this.dtpDataTransferencia.CustomFormat = "           dd    MMMM     yyyy";
-            this.dtpDataTransferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpDataTransferencia.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDataTransferencia.Location = new System.Drawing.Point(81, 96);
-            this.dtpDataTransferencia.Name = "dtpDataTransferencia";
-            this.tableLayoutPanel1.SetRowSpan(this.dtpDataTransferencia, 2);
-            this.dtpDataTransferencia.Size = new System.Drawing.Size(332, 30);
-            this.dtpDataTransferencia.TabIndex = 6;
+            this.dtpDataDespesa.CustomFormat = "           dd    MMMM     yyyy";
+            this.dtpDataDespesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDataDespesa.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDataDespesa.Location = new System.Drawing.Point(81, 96);
+            this.dtpDataDespesa.Name = "dtpDataDespesa";
+            this.tableLayoutPanel1.SetRowSpan(this.dtpDataDespesa, 2);
+            this.dtpDataDespesa.Size = new System.Drawing.Size(332, 30);
+            this.dtpDataDespesa.TabIndex = 6;
             // 
             // pictureBox2
             // 
@@ -270,14 +269,14 @@
             this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 12);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.dtpDataTransferencia, 2, 6);
+            this.tableLayoutPanel1.Controls.Add(this.dtpDataDespesa, 2, 6);
             this.tableLayoutPanel1.Controls.Add(this.panel6, 1, 16);
             this.tableLayoutPanel1.Controls.Add(this.cmbNovaContaTransferencia, 2, 14);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 1, 10);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox5, 1, 14);
             this.tableLayoutPanel1.Controls.Add(this.txtDescricaoDespesa, 2, 18);
-            this.tableLayoutPanel1.Controls.Add(this.cmbContaTransferencia, 2, 10);
+            this.tableLayoutPanel1.Controls.Add(this.cmbContaDespesa, 2, 10);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -313,16 +312,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(438, 260);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
-            // cmbContaTransferencia
+            // cmbContaDespesa
             // 
-            this.cmbContaTransferencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.cmbContaTransferencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbContaTransferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbContaTransferencia.FormattingEnabled = true;
-            this.cmbContaTransferencia.Location = new System.Drawing.Point(81, 151);
-            this.cmbContaTransferencia.Name = "cmbContaTransferencia";
-            this.cmbContaTransferencia.Size = new System.Drawing.Size(332, 33);
-            this.cmbContaTransferencia.TabIndex = 7;
+            this.cmbContaDespesa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.cmbContaDespesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbContaDespesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbContaDespesa.FormattingEnabled = true;
+            this.cmbContaDespesa.Location = new System.Drawing.Point(81, 151);
+            this.cmbContaDespesa.Name = "cmbContaDespesa";
+            this.cmbContaDespesa.Size = new System.Drawing.Size(332, 33);
+            this.cmbContaDespesa.TabIndex = 7;
             // 
             // pictureBox5
             // 
@@ -357,7 +356,6 @@
             this.Controls.Add(this.panel8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTransferencia";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTransferencia";
             this.panel8.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -380,7 +378,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnFecharForm;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.TextBox txtValorTransferencia;
+        private System.Windows.Forms.TextBox txtValorDespesa;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
@@ -389,12 +387,12 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.DateTimePicker dtpDataTransferencia;
+        private System.Windows.Forms.DateTimePicker dtpDataDespesa;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.ComboBox cmbNovaContaTransferencia;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox txtDescricaoDespesa;
-        private System.Windows.Forms.ComboBox cmbContaTransferencia;
+        private System.Windows.Forms.ComboBox cmbContaDespesa;
     }
 }

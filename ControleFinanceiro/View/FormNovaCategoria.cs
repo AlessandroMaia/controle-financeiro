@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace ControleFinanceiro.View
 {
-    public partial class FormCategoria : Form
+    public partial class FormNovaCategoria : Form
     {
-        public FormCategoria()
+        public FormNovaCategoria()
         {
             InitializeComponent();
         }
 
-        private void btnNovaCategoria_Click(object sender, EventArgs e)
+        private void btnFecharForm_Click(object sender, EventArgs e)
         {
-            new FormNovaCategoria().Show();
+            this.Close();
         }
     }
 }
