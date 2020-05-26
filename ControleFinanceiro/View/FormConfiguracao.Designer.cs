@@ -114,7 +114,6 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.label1, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.txtNomeUsuario, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 1, 5);
@@ -140,6 +139,7 @@
             this.tableLayoutPanel2.Controls.Add(this.txtProfissaoUsuario, 1, 25);
             this.tableLayoutPanel2.Controls.Add(this.panel9, 1, 26);
             this.tableLayoutPanel2.Controls.Add(this.btnAtualizarInformacaoUsuario, 1, 28);
+            this.tableLayoutPanel2.Controls.Add(this.label1, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(43, 93);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -620,7 +620,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.56676F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.43324F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
             this.tableLayoutPanel4.Controls.Add(this.lblNomeUsuario, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.btnProcurarFotoUsuario, 2, 2);
             this.tableLayoutPanel4.Controls.Add(this.pictureBox1, 1, 2);
